@@ -2,11 +2,20 @@
 margin: 0;
 padding: 0;
 }
-
+h1{
+    color: blue;
+    text-align: center;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline;}
+.navcaldo{
+    text-align: center;}    
 .container{
     display: grid;
     grid-template-columns: 180px 176px  180px;
-    grid-template-rows:    100px 100px 100px 100px 100px 100px 100px ;
+    grid-template-rows:    100px 100px 100px 100px 180px 150px 100px ;
     grid-template-areas:"fondo fondo fondo"
                         "nav      nav   nav"
                         "aside2 aside2 aside2"
@@ -15,134 +24,351 @@ padding: 0;
                         "main   main     main" 
                         "footer footer footer";
 
-         background-color: white;
-        }
-
+         background-color: white;        }
 .container2{
     display: grid;
-    grid-template-columns: 250px 250px;
-    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: 180px auto 125px auto 100px;
     grid-template-areas: "imagen1   imagen1"
                          "nav1      nav1 "
                           "sidea   sidea"
                           "imagen2 imagen2"
                            "footer2 footer2";
+                          background-color: white; }    
+.container3{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: 180px auto 125px auto 100px;
+    grid-template-areas: "caldo_img     caldo_img"
+                         "nav3      nav3 "
+                          "side3   side3"
+                         "caldover_img caldover_img"
+                         "footer3 footer3";
+                          background-color: white; }                
+.container4{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-template-rows: 180px auto 125px auto 100px;
+  grid-template-areas: "aguadito_img  aguadito_img"
+                       "nav4      nav4 "
+                       "side4   side4"
+                      "aguaditover_img  aguaditover"
+                        "footer4 footer4";
+                       background-color: white; }                        
+ .container5{
+ display: grid;
+ grid-template-columns:repeat(2,1fr);
+ grid-template-rows: 180px auto 125px auto 100px;
+ grid-template-areas: "menestron_img menestron_img"
+                       "nav5      nav5 "
+                      "side5   side5"
+                      "menesver_img  menesver_img"
+                     "footer5 footer5";
+                       background-color: white; }                                                 
 
-         background-color: white;                  
-                 
-        }      
  .imagen1{
-    grid-area: imagen1;
- }  
+    background-image:  url( "../img/minuta2.jpg"); 
+    width: 1320px;
+    height: 180px;   
+     grid-area: imagen1; }  
  .nav1{
+    text-align: center; 
     grid-area: nav1;
-    margin: 10px;
- }
+    margin: 10px;}
  .sidea{
     text-align: center;
     grid-area: sidea;
     display:flex;
+    padding: 10px;
+    border: 2px solid black;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-        background-color: aquamarine;
- }
+    align-items:stretch;
+    justify-content:space-evenly ;
+    height: 130px;
+    background-color: aquamarine;}
+ .sidea div1{
+     background-color: gainsboro;
+     width: 160px;
+     margin-bottom: 30px;
+     text-align: center;
+     line-height: 20px;
+     font-size: 15px;     
+     border:2px solid black; }   
  .imagen2{
-    grid-area: imagen2;
- }
+     background-image: url("../img/verdu1.jpg");
+     width: 1320px;
+     height: 180px;
+    grid-area: imagen2; }
+
+ .caldo_img{
+    background-image: url("../img/caldo.jpg");
+    width: 1320px;
+     height: 180px; 
+     grid-area:caldo_img;}
+.nav3{ 
+    text-align: center; 
+    grid-area: nav3;
+    margin: 10px;} 
+.side3{
+    text-align: center;
+    grid-area: side3;
+    display:flex;
+    padding: 10px;
+    border: 2px solid black;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content:space-evenly ;
+    height: 130px;
+           background-color: aquamarine;}   
+  .side3 div1{
+            background-color: gainsboro;
+            width: 160px;
+            margin-bottom: 30px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 15px;     
+            border:2px solid black; }            
+ .caldover_img{
+    background-image: url("../img/verdu1.jpg");
+    width: 1320px;
+     height: 180px;
+     grid-area:caldover_img; }
+
+.aguadito{
+    text-align: center; }     
+.aguadito_img{
+    background-image: url("../img/aguadito.jpg");
+    width: 1320px;
+    height: 180px;
+    grid-area:aguadito_img;} 
+.nav4{     
+    text-align: center; 
+    grid-area: nav4;
+    margin: 10px}  
+.side4{
+    text-align: center;
+    grid-area: side4;
+    display:flex;
+    padding: 10px;
+    border: 2px solid black;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content:space-evenly ;
+    height: 130px;
+  
+        background-color: aquamarine;}
+
+  .side4 div1{
+            background-color: gainsboro;
+            width: 160px;
+            margin-bottom: 30px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 15px;     
+            border:2px solid black; }          
+.aguaditover_img{
+    background-image: url("../img/verdu1.jpg");
+    width: 1320px;
+    height: 180px;
+    grid-area: aguaditover_img;} 
+
+.menestron{
+        text-align: center; }     
+.menestron_img{
+    background-image: url("../img/menestron.png");
+    width: 1320px;
+    height: 180px;
+    grid-area: menestron_img;}  
+.nav5{     
+        text-align: center; 
+        grid-area: nav5;
+        margin: 10px}       
+.side5{
+    text-align: center;
+    grid-area: side5;
+    display:flex;
+    padding: 10px;
+    border: 2px solid black;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content:space-evenly ;
+    height: 130px;
+   
+        background-color: aquamarine;}
+
+  .side5 div1{
+            background-color: gainsboro;
+            width: 160px;
+            margin-bottom: 30px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 15px;     
+            border:2px solid black; }   
+.menesver_img{
+   background-image: url("../img/verdu1.jpg");
+   width: 1320px;
+    height: 180px;
+     grid-area: menesver_img;}         
+ 
+
  .footer2{
-    grid-area: footer2;
- }
-
-
+    grid-area: footer2; }
 .fondo{
     background-image:  url( "../img/ver.jpg"); 
     grid-area: fondo;
        /*background-color:blue;
     font-style: oblique;
-    text-align: center;/*/
-  }
+    text-align: center;/*/  }
 .aside{
     background-image:  url( "../img/minuta2.jpg"); 
     grid-area: aside;
     
       /* background-color: aqua;
    /* font-style: oblique;
-    text-align: center;/*/
-    
-}  
+    text-align: center;/*/}  
 .aside2{
     background-image:  url( "../img/caldo.jpg");
-    grid-area: aside2;
-   
-}
+    grid-area: aside2;}
+.tarjeta_img{
+    background-image:  url( "../img/verdu1.jpg");}
 .nav{
     text-align: center;
     grid-area: nav;
-    background-color: greenyellow;
-}
+    background-color: greenyellow;}
 .main{
     grid-area: main;
-    background-color:aquamarine;
+    background-color:ghostwhite;
    
     font-style: oblique;
     text-align: center;
    display:flex;
     flex-direction: row;
-    justify-content: center;
-    height: 150px;
-    
-}
+    align-items: center;
+    justify-content:space-evenly ;
+    height: 180px;}
 .header{
     grid-area: header;
-    background-color: grey;
-
-
-}
-    .div{
-        background-color: brown;
-        border: 10px;        
+    background-color: grey;}
+    .div1{
+        background-color: yellow;
+        border: solid 5px black;        
         margin: 10px;
         width: 100px;
-        height: 50px;
+        height: 50px;  
+        animation-name: mover;
+        animation-duration: 4s;
     
     }
- 
-.footer{
+
+    .div2{
+        background-color: yellow;
+        border: solid 5px black;        
+        margin: 10px;
+        width: 100px;
+        height: 50px;  
+        color:white;
+   /* width: 200px;
+    margin: 10px;/*/
+    background-image: linear-gradient(to bottom , red ,green);
+    
+    }
+    .div3{
+        background-color: yellow;
+        border: solid 5px black;        
+        margin: 10px;
+        width: 100px;
+        height: 50px;  
+        transition: all 1s;
+    }       
+    .div31:hover{
+        transform: translate(200px,150px) rotate(360deg) ;
+    }
+
+
+        @keyframes mover {
+            0%{
+                transform: translate(0,0);
+            }
+        
+            25%{
+                transform: translate(100px,0);
+            }
+        
+            50%{
+                transform: translate(100px,100px);
+            }
+        
+            75%{
+                transform: translate(0px,100px);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        
+                
+        }
+ .footer{
     grid-area: footer;
     background-color: red;
     height: 50px;
     font-style: oblique;
-    text-align: center;
-   }
+    text-align: center;   }
 @media(min-width:576px)  {
     .container{
 
     display: grid;
     grid-template-columns: 180px auto  180px;
-    grid-template-rows:    100px 1fr  1fr 100px 100px 100px;
+    grid-template-rows:    100px 1fr  1fr 200px 100px 100px;
     grid-template-areas:"fondo fondo  fondo"
                          "aside2 nav aside"
                          "header header header"
                          "main   main  main" 
                          "footer footer footer";
 
-                background-color: white}
-
-}
-
+                background-color: white} }
 @media(min-width:576px)  {
     .container2{
-
     display: grid;
-    grid-template-columns: 250px 250px;
-    grid-template-rows:    auto 100px 100px 100px ;
+    grid-template-columns: 1fr,1fr;
+    grid-template-rows:    180px 130px 180px 100px ;
     grid-template-areas:"imagen1 imagen1"
                         "nav1 sidea"
                          "imagen2 imagen2"
                          "footer2 footer2";
 
-                background-color: white}
+                background-color: white}    }
+  @media(min-width:576px)  {
+    .container3{
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+    grid-template-rows:    180px 130px 180px 100px ;
+    grid-template-areas:"caldo_img         caldo_img"
+                         "nav3                 side3"
+                         "caldover_img caldover_img"
+                         "footer3           footer3";
 
-    }
-
+                background-color: white}   }                
+@media(min-width:576px)  {
+.container4{
+               
+display: grid;
+grid-template-columns: 1fr,1fr;
+grid-template-rows:    180px 130px  180px 100px ;
+grid-template-areas:"aguadito_img      aguadito_img"
+                    "nav4                side4"
+                    "aguaditover_img aguaditover_img" 
+                   "footer4            footer4";
+                
+               background-color: white} }     
+@media(min-width:576px)  {
+.container5{
+                
+display: grid;
+grid-template-columns: 1fr ,1fr;
+grid-template-rows:    180px 130px 180px 100px;
+grid-template-areas:"menestron_img menestron_img"
+                     "nav5             side5"
+                   "menesver_img    menesver_img"
+                   "footer5           footer5";
+                
+                                background-color: white}    } 

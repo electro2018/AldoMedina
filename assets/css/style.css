@@ -3,12 +3,16 @@
     padding: 0;
 }
 
-h1{
-    display:flex;
-    margin: 20px;
-    padding: 20px;
-    border: 120px;
-}
+h1{ text-align: center;
+     display:flex;
+    padding: 10px;
+    border: 2px solid black;
+    flex-direction: row;
+    align-items:stretch;
+    justify-content:space-evenly ;
+    height: 100px;
+    background-color: rgb(205, 205, 226);}
+    
 
 .img1{
     height: 220px;
@@ -19,11 +23,25 @@ h1{
     width: 1200px;;
 }
 .img3{
-    height: 50px;
-    width: 100px;;
+    height: 220px;
+    width: 1200px;;
 }
+footer{
+    display:flex;
+    padding: 10px;
+    border: 2px solid black;
+    flex-direction: row;
+    align-items:stretch;
+    justify-content:space-evenly ;
+    height: 130px;
+    background-color: rgb(185, 185, 209);}
+    
+    font-style: oblique;
+    text-align: center;   }
+
 
 .footer{
+    display:flex;
     margin: 20px;
     padding: 20px;
     border: 20px;

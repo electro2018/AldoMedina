@@ -1,0 +1,27 @@
+.container-fluid{
+    /* color: rgb(87, 87, 220);*/
+    background-color: rgb(171, 215, 227);
+ }
+ 
+ 
+ 
+ h1{
+ 
+ grid-area: main;
+ background-color:wheat;
+ font-style: oblique;
+ text-align: center;
+ display:flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
+ height:75px;}
+ 
+ .img{
+     display: block;
+      margin: 0px auto;
+     height: 300px;
+     width: 1250px;;
+ }
+ 
+ 

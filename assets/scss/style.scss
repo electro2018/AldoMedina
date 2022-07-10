@@ -1,49 +1,7 @@
-$title-font:normal10px;
+@import"footer.scss";
+@import"nav.scss";
+@import"aside.scss";
+@import"reset.scss";
+@import"main.scss";
 
 
-*{
-    margin: 0;
-    padding: 0;}
-.container-fluid{
-background-color: rgb(175, 185, 185);} 
-h1{
-    font:$title-font;
-     text-align: center;
-     display:flex;
-    padding: 10px;
-    border: 2px solid black;
-    flex-direction: row;
-    align-items:stretch;
-    justify-content:space-evenly ;
-    height: 100px;
-    background-color: rgb(205, 205, 226);}
- .navbar-nav {
-    background-color: yellow;
-      ul{
-        list-style:none;
-        display:flex;
-        li{
-            padding: 10px;
-            a{
-                text-decoration: none;
-                color:white;
-                font-size: 20px;
-            }
-        }
-      }  }
-.img{
-    height: 220px;
-    width: 1500px;}
-.img1{
-    height: 250px;
-    width: 1200px;}
-footer{
-    display:flex;
-    padding: 10px;
-    border: 2px solid black;
-    flex-direction: row;
-    align-items:stretch;
-    justify-content:space-evenly ;
-    height: 130px;
-    background-color: greenyellow;}
-   

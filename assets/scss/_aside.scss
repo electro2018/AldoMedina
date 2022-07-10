@@ -1,0 +1,40 @@
+.aside {
+    background-color:$colorPrimario;
+   
+    font-style: oblique;
+    text-align: center;
+   display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly ;
+    height: 180px;}
+  
+
+
+.div1{
+    background-color: yellow;
+    border: solid 3px black;        
+    margin: 3px;
+    width: 200px;
+    height: 100px;  
+    animation-name: mover;
+    animation-duration: 10s;
+
+}
+
+.div{
+    background-color: yellow;
+    border: solid 5px black;        
+    margin: 10px;
+    width: 200px;
+    height:100px;  
+    color:white;
+    animation-name: mover;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-delay:10s;
+
+/* width: 200px;
+margin: 10px;/*/
+background-image: linear-gradient(to bottom , blue ,white);
+}

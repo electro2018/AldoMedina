@@ -3,5 +3,19 @@
 @import"aside.scss";
 @import"reset.scss";
 @import"main.scss";
+@import"map.scss";
+@import"formamix.scss";
 
+h1{
+
+    color:map-get($color,primary);
+  }
+
+  h4{
+    @include formato(30px,200)
+  }
+  
+  h5{
+    @include formato(30px,100)
+  } 
 

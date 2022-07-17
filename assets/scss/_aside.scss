@@ -1,40 +1,46 @@
-.aside {
-    background-color:$colorPrimario;
-   
+@mixin formatodos{   
     font-style: oblique;
     text-align: center;
-   display:flex;
+    display:flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-evenly ;
-    height: 180px;}
-  
-
-
-.div1{
-    background-color: yellow;
-    border: solid 3px black;        
-    margin: 3px;
-    width: 200px;
-    height: 100px;  
-    animation-name: mover;
-    animation-duration: 10s;
-
+    justify-content:space-evenly;
+}
+.aside {
+   
+    @include formatodos;
+    /*background-color:$colorPrimario;*/
+    height: 180px;
+    background-color:rgb(79, 169, 125);
 }
 
-.div{
-    background-color: yellow;
-    border: solid 5px black;        
-    margin: 10px;
-    width: 200px;
-    height:100px;  
-    color:white;
-    animation-name: mover;
-    animation-duration: 10s;
-    animation-iteration-count:infinite;
-    animation-delay:10s;
 
-/* width: 200px;
-margin: 10px;/*/
+    .col{
+        background-color: white;
+        margin: 40px ;
+        border: solid 2px black;
+        padding: 20px;     
+    }
+  
+    @mixin acabado($borde,$margin)
+    {
+     background-color: yellow; 
+     border: $borde;        
+     margin: $margin;
+     width: 200px;
+     height: 100px;  
+     animation-name: mover;
+     animation-duration: 10s;
+  }
+
+ .div1{   
+    @include acabado(solid 3px black, 15px);    
+ }
+
+.div{  
+    @include acabado(solid 5px black,10px);
+ color:white;
+ animation-iteration-count:infinite;
+ animation-delay:10s;
 background-image: linear-gradient(to bottom , blue ,white);
 }

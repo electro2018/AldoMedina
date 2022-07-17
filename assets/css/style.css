@@ -1,6 +1,8 @@
 footer {
-  margin: 2px;
-  border: 5px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  height: 100px;
   background-color: rgb(190, 176, 31);
 }
 
@@ -23,20 +25,28 @@ footer {
 }
 
 .aside {
-  background-color: rgb(151, 230, 156);
   font-style: oblique;
   text-align: center;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  /*background-color:$colorPrimario;*/
   height: 180px;
+  background-color: rgb(79, 169, 125);
+}
+
+.col {
+  background-color: white;
+  margin: 40px;
+  border: solid 2px black;
+  padding: 20px;
 }
 
 .div1 {
   background-color: yellow;
   border: solid 3px black;
-  margin: 3px;
+  margin: 15px;
   width: 200px;
   height: 100px;
   -webkit-animation-name: mover;
@@ -51,17 +61,15 @@ footer {
   margin: 10px;
   width: 200px;
   height: 100px;
-  color: white;
   -webkit-animation-name: mover;
           animation-name: mover;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
+  color: white;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
-  /* width: 200px;
-  margin: 10px;/*/
   background-image: linear-gradient(to bottom, blue, white);
 }
 
@@ -75,8 +83,12 @@ footer {
   background-color: rgb(171, 215, 227);
 }
 
+.container {
+  margin: 40px;
+  border: 100px;
+}
+
 h1 {
-  grid-area: main;
   background-color: wheat;
   font-style: oblique;
   text-align: center;

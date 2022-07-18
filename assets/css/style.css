@@ -1,9 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 footer {
   padding: 0px;
   margin: 0px;
   border: 0px;
   height: 100px;
-  background-color: rgb(190, 176, 31);
+  background-color: rgb(114, 114, 99);
 }
 
 .navbar-brand:hover {
@@ -16,8 +21,6 @@ footer {
 
 .nav-link:hover {
   background: rgb(119, 184, 214);
-  /*  width:2px;
-  height:20px;*/
 }
 
 .navbar-toggler {
@@ -31,9 +34,8 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  /*background-color:$colorPrimario;*/
   height: 180px;
-  background-color: rgb(79, 169, 125);
+  background-color: rgb(244, 243, 234);
 }
 
 .col {
@@ -43,39 +45,19 @@ footer {
   padding: 20px;
 }
 
-.div1 {
-  background-color: yellow;
-  border: solid 3px black;
-  margin: 15px;
-  width: 200px;
-  height: 100px;
-  -webkit-animation-name: mover;
-          animation-name: mover;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-}
-
 .div {
   background-color: yellow;
-  border: solid 5px black;
+  border: solid 3px black;
   margin: 10px;
   width: 200px;
   height: 100px;
-  -webkit-animation-name: mover;
-          animation-name: mover;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  color: white;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+  /* animation-name: mover;     animation-duration: 10s;/*/
+  color: rgb(255, 255, 255); /* animation-iteration-count:infinite; animation-delay:10s;*/
   background-image: linear-gradient(to bottom, blue, white);
 }
 
-* {
-  margin: 0;
-  padding: 0;
+.direc {
+  color: rgb(140, 36, 36);
 }
 
 .container-fluid {

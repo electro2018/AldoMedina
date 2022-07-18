@@ -1,4 +1,5 @@
-@mixin formatodos{   
+
+@mixin formato{   
     font-style: oblique;
     text-align: center;
     display:flex;
@@ -6,41 +7,36 @@
     align-items: center;
     justify-content:space-evenly;
 }
-.aside {
-   
-    @include formatodos;
-    /*background-color:$colorPrimario;*/
+.aside {   
+    
+    @include formato;
     height: 180px;
-    background-color:rgb(79, 169, 125);
-}
-
-
-    .col{
-        background-color: white;
-        margin: 40px ;
-        border: solid 2px black;
-        padding: 20px;     
+    background-color:$colorTercerNivel;
+    
     }
-  
-    @mixin acabado($borde,$margin)
-    {
+
+@mixin acabado($borde,$margin)    {
      background-color: yellow; 
      border: $borde;        
      margin: $margin;
      width: 200px;
      height: 100px;  
-     animation-name: mover;
-     animation-duration: 10s;
-  }
+    /* animation-name: mover;     animation-duration: 10s;/*/
+    }
+.col{
+    background-color: white;
+    margin: 40px ;
+    border: solid 2px black;
+    padding: 20px;     
+    }
 
- .div1{   
-    @include acabado(solid 3px black, 15px);    
- }
 
 .div{  
-    @include acabado(solid 5px black,10px);
- color:white;
- animation-iteration-count:infinite;
- animation-delay:10s;
+    @include acabado(solid 3px black,10px);
+ color:rgb(255, 255, 255);/* animation-iteration-count:infinite; animation-delay:10s;*/
+
 background-image: linear-gradient(to bottom , blue ,white);
+}
+.direc{
+    color:rgb(140, 36, 36);
 }

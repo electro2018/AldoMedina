@@ -1,17 +1,18 @@
-.container-fluid{
+.containert-fluid{
     /* color: rgb(87, 87, 220);*/
-    background-color: rgb(171, 215, 227);
+    background-color: white;
  }
  
  .container{
+    background-color: rgb(255, 255, 255);
     margin: 40px ;
     border: 100px; 
 
 }
  
  h1{ 
-
- background-color:wheat;
+ color:white;    
+ background-color:rgb(143, 140, 135);
  font-style: oblique;
  text-align: center;
  display:flex;
@@ -27,4 +28,6 @@
      width: 1250px;;
  }
  
- 
+ .a{
+    color:white;
+ }

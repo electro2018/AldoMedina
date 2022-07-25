@@ -7,8 +7,7 @@
     align-items: center;
     justify-content:space-evenly;
 }
-.aside {   
-    
+.aside {       
     @include formato;
     height: 180px;
     background-color:$colorTercerNivel;
@@ -24,6 +23,8 @@
     /* animation-name: mover;     animation-duration: 10s;/*/
     }
 .col{
+    
+    box-shadow:10px 10px rgb(211, 216, 218);
     background-color: white;
     margin: 40px ;
     border: solid 2px black;
@@ -33,9 +34,8 @@
 
 .div{  
     @include acabado(solid 3px black,10px);
- color:rgb(255, 255, 255);/* animation-iteration-count:infinite; animation-delay:10s;*/
-
-background-image: linear-gradient(to bottom , blue ,white);
+ color:rgb(255, 255, 255);
+ background-image: linear-gradient(to bottom , rgb(174, 174, 182) ,white);
 }
 .direc{
     color:rgb(140, 36, 36);

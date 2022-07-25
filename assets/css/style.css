@@ -8,23 +8,49 @@ footer {
   margin: 0px;
   border: 0px;
   height: 100px;
-  background-color: rgb(114, 114, 99);
+  background-color: rgb(221, 221, 214);
+}
+
+/*letras inicio*/
+.navbar-brand {
+  color: white;
 }
 
 .navbar-brand:hover {
+  color: white;
   display: block;
   margin: 0px auto;
-  background: rgb(119, 184, 214);
+  background: rgb(78, 78, 78);
   width: 60px;
   height: 40px;
 }
 
+/* fondo barra navegacion*/
+.container-fluid {
+  color: white;
+  background-color: rgb(79, 78, 77);
+}
+
+.navbar navbar-expand-lg bg-light {
+  background-color: rgb(245, 238, 238);
+  color: white;
+}
+
 .nav-link:hover {
+  color: white;
   background: rgb(119, 184, 214);
 }
 
 .navbar-toggler {
   background-color: yellowgreen;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-item {
+  color: white;
 }
 
 .aside {
@@ -35,10 +61,11 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   height: 180px;
-  background-color: rgb(244, 243, 234);
+  background-color: rgb(145, 143, 129);
 }
 
 .col {
+  box-shadow: 10px 10px rgb(211, 216, 218);
   background-color: white;
   margin: 40px;
   border: solid 2px black;
@@ -52,26 +79,28 @@ footer {
   width: 200px;
   height: 100px;
   /* animation-name: mover;     animation-duration: 10s;/*/
-  color: rgb(255, 255, 255); /* animation-iteration-count:infinite; animation-delay:10s;*/
-  background-image: linear-gradient(to bottom, blue, white);
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to bottom, rgb(174, 174, 182), white);
 }
 
 .direc {
   color: rgb(140, 36, 36);
 }
 
-.container-fluid {
+.containert-fluid {
   /* color: rgb(87, 87, 220);*/
-  background-color: rgb(171, 215, 227);
+  background-color: white;
 }
 
 .container {
+  background-color: rgb(255, 255, 255);
   margin: 40px;
   border: 100px;
 }
 
 h1 {
-  background-color: wheat;
+  color: white;
+  background-color: rgb(143, 140, 135);
   font-style: oblique;
   text-align: center;
   display: flex;
@@ -86,4 +115,19 @@ h1 {
   margin: 0px auto;
   height: 300px;
   width: 1250px;
+}
+
+.a {
+  color: white;
+}
+
+.aside {
+  font-style: oblique;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 180px;
+  background-color: rgb(145, 143, 129);
 }/*# sourceMappingURL=style.css.map */

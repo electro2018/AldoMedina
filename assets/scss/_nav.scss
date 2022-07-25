@@ -1,16 +1,41 @@
+/*letras inicio*/
+.navbar-brand{
+  color:white;
+}
 .navbar-brand:hover{
+  color:white;
     display: block;
     margin: 0px auto;
-    background:rgb(119, 184, 214); 
+    background:rgb(78, 78, 78); 
    width:60px;
    height:40px;
 }
+/* fondo barra navegacion*/
+.container-fluid{
+  color:white;
+  background-color: rgb(79, 78, 77);
+}
 
+.navbar navbar-expand-lg bg-light
+{
+  background-color: rgb(245, 238, 238);
+  color:white;
+}
 .nav-link:hover{
+  color:white;
   background:rgb(119, 184, 214); 
   
 }
 
 .navbar-toggler{
     background-color: yellowgreen;
+}
+.nav-link
+{
+  color:white;
+}
+
+.nav-item
+{
+  color:white;
 }

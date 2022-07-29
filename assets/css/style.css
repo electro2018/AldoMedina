@@ -19,9 +19,9 @@ footer {
 .navbar-brand:hover {
   color: white;
   display: block;
-  margin: 0px auto;
-  background: rgb(78, 78, 78);
-  width: 60px;
+  margin: 0px;
+  background: rgb(119, 184, 214);
+  width: 50px;
   height: 40px;
 }
 
@@ -29,6 +29,7 @@ footer {
 .container-fluid {
   color: white;
   background-color: rgb(79, 78, 77);
+  /* height: 80px;*/
 }
 
 .navbar navbar-expand-lg bg-light {
@@ -66,10 +67,26 @@ footer {
 
 .col {
   box-shadow: 10px 10px rgb(211, 216, 218);
-  background-color: white;
+  /* background-color: white;*/
   margin: 40px;
   border: solid 2px black;
   padding: 20px;
+}
+
+.rowa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card {
+  box-shadow: 10px 10px rgb(211, 216, 218);
+  /* background-color: white;*/
+  margin: 4px;
+  border: solid 2px black;
+  padding: 2px;
 }
 
 .div {
@@ -113,8 +130,19 @@ h1 {
 .img {
   display: block;
   margin: 0px auto;
-  height: 300px;
+  height: 90px;
+  width: 150px;
+}
+
+.img1 {
+  display: block;
+  margin: 0px auto;
+  height: 250px;
   width: 1250px;
+}
+
+.example {
+  width: 125px;
 }
 
 .a {

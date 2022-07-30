@@ -38,8 +38,16 @@
     margin: 20px;
     padding: 20px;
 }
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     
-.card{    
+}
+    
+.card{   
+   
     box-shadow:10px 10px rgb(211, 216, 218);
        /* background-color: white;*/
     margin: 4px ;

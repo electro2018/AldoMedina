@@ -4,8 +4,8 @@
 }
 
 footer {
-  padding: 0px;
-  margin: 0px;
+  padding: 10px;
+  margin: 10px;
   border: 0px;
   height: 100px;
   background-color: rgb(221, 221, 214);
@@ -81,6 +81,12 @@ footer {
   padding: 20px;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .card {
   box-shadow: 10px 10px rgb(211, 216, 218);
   /* background-color: white;*/
@@ -141,12 +147,15 @@ h1 {
   width: 1250px;
 }
 
-.example {
-  width: 125px;
+.carta {
+  padding: 12px;
+  margin: 12px;
 }
 
-.a {
-  color: white;
+.contain {
+  /*background-color: rgb(255, 255, 255);*/
+  margin: 40px;
+  border: 100px;
 }
 
 .aside {

@@ -11,8 +11,7 @@
     @include formato;
     height: 180px;
     background-color:$colorTercerNivel;
-    
-    }
+        }
 
 @mixin acabado($borde,$margin)    {
      background-color: yellow; 
@@ -22,8 +21,8 @@
      height: 100px;  
     /* animation-name: mover;     animation-duration: 10s;/*/
     }
-.col{
-    
+
+.col{    
     box-shadow:10px 10px rgb(211, 216, 218);
    /* background-color: white;*/
     margin: 40px ;

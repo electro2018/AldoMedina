@@ -1,12 +1,15 @@
 //ingresar numero y regresa el doble , escribir "salir" donde se termina el ciclo y muestra  cantidad de ingresados
-for (let a=0; a<10 ;a++)
-{
-var entrada =prompt ("ingrese valor")
-var salida = entrada*2
-
-if (entrada == "salir") {
- alert("se ingresaron "+ a +  "   numeros")
-a=11;
-}
-else 
-alert("valor es "+ "   " +salida)}
+function promedio (){
+    intop=0;      
+    var entrada1 = prompt("ingrese cantidad de notas a contabilizar")
+    for (let a=0;a<entrada1;a++)
+    
+    {
+    var into = prompt( "ingrese nota" )
+    var intop=  parseInt(intop) +  parseInt(into)
+    }
+     
+    alert( "promedio es " +  intop/entrada1)
+    
+        }
+    promedio();

@@ -9,7 +9,7 @@ function promedio (){
     var intop=  parseInt(intop) +  parseInt(into)
     }
      
-    alert( "promedio es " +  intop/entrada1)
+    alert( "promedio es " + intop/entrada1)
     
         }
     promedio();

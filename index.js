@@ -11,7 +11,7 @@ const promedio4 = new Alumno("Julio",31);
 const promedio5 = new Alumno("Julio",31);
 
 function promedio() {
-  intop=0;   
+ let intop=0;   
     const nombre = ["Luis" ,"Francisco" ,"Julio","Javier","Gerald"] 
     let entrada2 = prompt("ingrese nombre alumno [ Luis,Francisco,Julio,Javier,Gerald]")
      for (let i=0;i<nombre.length;i++)
@@ -20,8 +20,8 @@ function promedio() {
 
     let entrada1 = prompt("ingrese cantidad de notas a contabilizar")
     for (let a=0;a<entrada1;a++)        {
-    var into = prompt( "ingrese nota" )
-    var intop=  parseInt(intop) +  parseInt(into)    }
+    const into = prompt( "ingrese nota" )
+    intop=  parseInt(intop) +  parseInt(into)    }
     alert( "promedio es " + intop/entrada1)
     }
 

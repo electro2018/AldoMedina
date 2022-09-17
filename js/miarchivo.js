@@ -5,10 +5,10 @@ class Alumno{
      }
     }
 const promedio1 = new Alumno("Luis",31);
-const promedio2 = new Alumno("Francisco",31); 
-const promedio3 = new Alumno("Julio",31);
-const promedio4 = new Alumno("Julio",31);
-const promedio5 = new Alumno("Julio",31);
+const promedio2 = new Alumno("Francisco",33); 
+const promedio3 = new Alumno("Julio",35);
+const promedio4 = new Alumno("Javier",41);
+const promedio5 = new Alumno("Gerald",36);
 
 function promedio() {
  let intop=0;   
@@ -24,5 +24,3 @@ function promedio() {
     intop=  parseInt(intop) +  parseInt(into)    }
     alert( "promedio es " + intop/entrada1)
     }
-
-     promedio();

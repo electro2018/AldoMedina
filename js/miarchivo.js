@@ -1,15 +1,26 @@
-class Alumno{
-    constructor(nombre,edad){
-    this.nombre = nombre ;
-    this.edad = edad;   
-     }
-    }
-const promedio1 = new Alumno("Luis",31);
-const promedio2 = new Alumno("Francisco",33); 
-const promedio3 = new Alumno("Julio",35);
-const promedio4 = new Alumno("Javier",41);
-const promedio5 = new Alumno("Gerald",36);
-
+let productos = [
+    
+    {nombre:"Luis"     , edad:31},
+    {nombre:"Francisco" ,edad:33},
+    {nombre:"Julio"    , edad:35},
+    {nombre:"Javier"  ,  edad:41},
+    {nombre:"Gerald"  ,  edad:36},
+    
+    ]
+let contenedor = document.getElementById("contenedor");
+let input = prompt("Ingresa nombre alumno que se mostraran datos [Luis,Francisco,Julio,Javier Gerald]");
+if (input === productos[0].nombre )   
+ 
+    for (let i=0 ; i<5 ; i++){
+        if (input === productos[i].nombre ) {
+    let div = document.createElement("div");
+div.innerHTML =`
+<h2>Nombre ${productos[i].nombre}</h2>
+<p>Edad ${productos[i].edad}</p>
+`
+contenedor.append(div);
+} }
+   
 function promedio() {
  let intop=0;   
     const nombre = ["Luis" ,"Francisco" ,"Julio","Javier","Gerald"] 
@@ -24,3 +35,5 @@ function promedio() {
     intop=  parseInt(intop) +  parseInt(into)    }
     alert( "promedio es " + intop/entrada1)
     }
+
+     promedio();

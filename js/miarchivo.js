@@ -1,39 +1,27 @@
-let productos = [
-    
-    {nombre:"Luis"     , edad:31},
-    {nombre:"Francisco" ,edad:33},
-    {nombre:"Julio"    , edad:35},
-    {nombre:"Javier"  ,  edad:41},
-    {nombre:"Gerald"  ,  edad:36},
-    
-    ]
+let productos =[];
 let contenedor = document.getElementById("contenedor");
-let input = prompt("Ingresa nombre alumno que se mostraran datos [Luis,Francisco,Julio,Javier Gerald]");
-if (input === productos[0].nombre )   
- 
-    for (let i=0 ; i<5 ; i++){
-        if (input === productos[i].nombre ) {
-    let div = document.createElement("div");
-div.innerHTML =`
-<h2>Nombre ${productos[i].nombre}</h2>
-<p>Edad ${productos[i].edad}</p>
-`
-contenedor.append(div);
-} }
-   
+let formulario = document.getElementById("formulario");
+formulario.addEventListener("submit",(e)=>{
+    e.preventDefault();
+
+  
 function promedio() {
- let intop=0;   
-    const nombre = ["Luis" ,"Francisco" ,"Julio","Javier","Gerald"] 
-    let entrada2 = prompt("ingrese nombre alumno [ Luis,Francisco,Julio,Javier,Gerald]")
-     for (let i=0;i<nombre.length;i++)
-     if (nombre[i]==entrada2)
-     {     alert("si corresponde");     }
+  
+  let a=inputs[0].value;
+   let b=inputs[1].value;
+   s=(parseInt(a)+parseInt(b))/2 ;
+  return s ;
+}
 
-    let entrada1 = prompt("ingrese cantidad de notas a contabilizar")
-    for (let a=0;a<entrada1;a++)        {
-    const into = prompt( "ingrese nota" )
-    intop=  parseInt(intop) +  parseInt(into)    }
-    alert( "promedio es " + intop/entrada1)
-    }
+let inputs = e.target.children;
+productos.push(inputs[0].value);
+ productos.forEach (producto =>{
+ let div = document.createElement("div");
+ div.innerHTML = promedio();
+ 
+   contenedor.append(div);
+   } )
+    inputs[0].value="";
+    inputs[1].value="";
 
-     promedio();
+})

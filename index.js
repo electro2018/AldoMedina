@@ -1,11 +1,10 @@
 let productos = [];
 let contenedor = document.getElementById("contenedor");
-//let contenedor2 = document.getElementById("contenedor2");
 let formulario = document.getElementById("formulario");
 formulario.addEventListener("submit",(e)=>{
     e.preventDefault();
 contenedor.innerHTML = "";
-//contenedor2.innerHTML = "";
+
 
 function promedio() {
  let a=inputs[0].value;
@@ -32,9 +31,20 @@ productos.push(inputs[0].value);
  //acceder al localStorage    
  let nombre = localStorage.getItem("nombre");   
 
-
-
 })
 
+fetch("https://jsonplaceholder.typicode.com/posts")
+  .then(response => response.json())
+  .then((data) => {
+        data.forEach((item) => {
+            let li = document.createElement("li");
+            li.innerHTML = `
+            <h3>ID: ${item.id}</h3>
+            <h4>userId: ${item.userId}</h4>
+            <p>$${item.title}<p>  
+              `;
+                contenedor.append(li);
+        });
+        });
 
 
